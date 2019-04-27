@@ -39,4 +39,4 @@ Received event from binding:Test Message
 
 ```
 
-Note that the consumer logs do  not receive the `aws_receivedSequenceNumber` header value.
+Note that the consumer logs show that i am infact receiveing the header `aws_receivedSequenceNumber`
