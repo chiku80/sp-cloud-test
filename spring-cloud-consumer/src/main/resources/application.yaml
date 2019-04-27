@@ -1,0 +1,26 @@
+cloud:
+  aws:
+    credentials:
+      accessKey: <yourkey>
+      secretKey: <yoursecret>
+    region:
+      static: us-east-1
+    stack:
+      name: testStack
+
+
+spring:
+  http:
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+  cloud:
+    stream:
+      bindings:
+        oracleOpJobEvents:
+          destination:  <your kinesis queue name>
+          content-type: text/plain
+
+server:
+  port: 8081

@@ -1,0 +1,8 @@
+server:
+  port: 8082
+
+test:
+  region: "us-east-1"
+  awsAccessKeyId: <yourkey>
+  awsSecretSharedKey: <your secret>
+  queueName: <your kinesis queue name>
