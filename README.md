@@ -1,20 +1,20 @@
-# SP-CLOUD-TEST 
+# SP-CLOUD-TEST
 
 This directory contains 2 project directories:
 1. thirdparty-producer (This uses regular aws java sdk to produce to kinesis)
 2. spring-cloud-consumer  (This is uses spring-cloud-stream to consume)
 
-# Pre-requsites: 
-1. jdk 11.0 
+# Pre-requsites:
+1. jdk 11.0
 2. maven 3.6.0
 3. Need aws account information with admin priveiledges to aws kinesis
 
 
-# How to test 
+# How to test
 
 ## Configuration
 configure your aws values in the following files. Configure the properties  `<yourkey>` `<your secret>` and `<your kinesis queue name>`
-                                                                              
+
 1. thirdparty-producer/src/main/resources/application-yml
 2. spring-cloud-consumer/src/main/resources/application-yml
 
@@ -40,3 +40,6 @@ Received event from binding:Test Message
 ```
 
 Note that the consumer logs show that i am infact receiveing the header `aws_receivedSequenceNumber`
+
+
+testing pr
